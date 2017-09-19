@@ -8,6 +8,7 @@ object PhantomTypes extends App {
   @scala.annotation.implicitNotFound("That's not a valid state transition")
   trait Valid[From, To]
   implicit val sleepingToScalaing: Valid[Sleeping, Scalaing] = null
+  implicit val scalaingToHiking: Valid[Scalaing, Hiking] = null
 
   case class Attendee[S <: State](caption: String)
 

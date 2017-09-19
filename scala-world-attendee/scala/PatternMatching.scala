@@ -23,7 +23,7 @@ object PatternMatching extends App {
     }
   }
 
-  println(goToBed(sleepingAttendee))
-  println(startScalaing(sleepingAttendee))
+  println(goToBed(sleepingAttendee))        // Left(Attendee is already asleep!)
+  println(startScalaing(sleepingAttendee))  // Right(Attendee(Scalaing,I love types!))
 }
 
