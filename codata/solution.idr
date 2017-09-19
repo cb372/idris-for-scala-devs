@@ -1,6 +1,3 @@
-lists : Int -> List Int -> Stream (List Int)
-lists n xs = xs :: (lists (n+1) (xs ++ [n]))
-
 codata Tree : Type -> Type where
   Node : (e : a) -> Tree a -> Tree a -> Tree a
 
